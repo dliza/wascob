@@ -314,9 +314,11 @@ const linksDrive = {
 // Inicialización del cliente de WhatsApp con persistencia de sesión
 const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: { headless: true } // En producción, podrías cambiar a true
+    puppeteer: {
+        headless: false, // o true según lo que necesites
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
 });
-
 // Muestra el QR en consola para escanearlo
 client.on('qr', (qr) => {
     console.log('QR recibido, escanéalo con tu teléfono:');
