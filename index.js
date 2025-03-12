@@ -315,7 +315,7 @@ const linksDrive = {
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        headless: false, // o true según lo que necesites
+        headless: true, // o true según lo que necesites
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
