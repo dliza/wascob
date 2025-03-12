@@ -1,0 +1,24 @@
+# Modulos de node
+node_modules
+
+# Archivos log
+*.log
+logs/
+
+# Archivos de configuracion sencible
+.env
+
+# Archivo de sesión de whatsapp-web.js (si lo utilizas)
+session.json
+
+# Archivos de salida de compilación (si aplicas algún proceso de build)
+dist/
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos generados por whatsapp-web.js
+.wwebjs_auth
+.wwebjs_cache
+whatsapp-session
